@@ -1,0 +1,23 @@
+﻿<div ng-app="appone" ng-controller="registrarCtrl">
+    <form name="formRegistrar" novalidate>
+        <div>
+            <label for="usuario">E-mail</label>
+            <input type="text" ng-model="usuario.Email" required />
+            <span ng-show="formRegistrar.Email.$touched && formRegistrar.Email.$invalid">Preencha o E-mail</span>
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" ng-model="usuario.Password" required />
+            <span ng-show="formRegistrar.Email.$touched && formRegistrar.Email.$invalid">Preencha a Senha</span>
+        </div>
+        <div>
+            <label for="confirmarSenha">Confirmar senha</label>
+            <input type="password" ng-model="usuario.ConfirmPassword" required />
+            <span ng-show="formRegistrar.Email.$touched && formRegistrar.Email.$invalid">Confirme a Senha</span>
+        </div>
+        <div>
+            <a class="btn blue" ng-disabled="!formRegistrar.$valid" ng-click="registrar()">Registrar</a>
+            <a class="btn blue" ng-click="cancel()">Cancelar</a>
+        </div>
+    </form>
+</div>

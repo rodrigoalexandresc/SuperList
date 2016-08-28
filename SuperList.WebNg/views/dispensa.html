@@ -1,0 +1,25 @@
+﻿<div ng-app="appone" ng-controller="servicosDetailCtrl">
+    <form name="formServico" novalidate>
+        <div>
+            <label for="codigo">Código</label>
+            <input class="input-field" type="text" disabled value="{{servico.Id}}">
+        </div>
+
+        <div>
+            <label for="Descricao">Descrição</label>
+            <input type="text" ng-model="servico.Descricao" name="Descricao" required />
+            <span ng-show="formServico.Descricao.$touched && formServico.Descricao.$invalid">Preencha a descrição do serviço</span>
+        </div>
+
+        <div>
+            <label for="ValorUnitario">Valor unitário</label>
+            <input type="number" ng-model="servico.ValorUnitario" name="ValorUnitario" required />
+            <span ng-show="formServico.ValorUnitario.$touched && formServico.ValorUnitario.$invalid">Preencha o valor unitário</span>
+        </div>
+
+        <div>
+            <a class="btn blue" ng-disabled="!formServico.$valid" ng-click="save()">Salvar</a>
+            <a class="btn blue" ng-click="cancel()">Cancelar</a>
+        </div>
+    </form>
+</div>

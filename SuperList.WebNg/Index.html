@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link rel="stylesheet" href="Content/bootstrap.min.css" />-->
+</head>
+<body ng-app="superlist" ng-controller="homeCtrl">
+    <header> 
+        <nav>
+            <div class="nav-wrapper red darken-1">
+                <a href="/#/home" class="left brand-logo">SuperList</a>
+                <ul class="right">
+                    <li><a href="#/login"><i class="material-icons right">perm_identity</i></a></li>
+                    <li><a href="#/listaDeCompra"><i class="material-icons right">shopping_cart</i></a></li>
+                    <li><a href="#/dispensa"><i class="material-icons right">view_list</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--<i class="material-icons right">more_vert</i>-->
+    </header>
+    <section ng-view></section>
+    <footer class="page-footer red"><h6>SuperList</h6></footer>
+</body>
+</html>
+<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="controllers/controller.js"></script>
+<script type="text/javascript" src="lib/infra.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+

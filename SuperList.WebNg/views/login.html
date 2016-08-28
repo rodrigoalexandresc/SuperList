@@ -1,0 +1,18 @@
+﻿<div ng-app="appone" ng-controller="loginCtrl">
+    <form name="formLogin" novalidate>
+        <div>
+            <label for="usuario">E-mail</label>
+            <input type="text" ng-model="usuario.Email" required />
+            <span ng-show="formRegistrar.Email.$touched && formRegistrar.Email.$invalid">Preencha o E-mail</span>
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" ng-model="usuario.Password" required />
+            <span ng-show="formRegistrar.Email.$touched && formRegistrar.Email.$invalid">Preencha a Senha</span>
+        </div>
+        <div>
+            <a class="btn blue" ng-disabled="!formRegistrar.$valid" ng-click="login()">Entrar</a>
+            <a class="btn blue" ng-click="exit()">Sair</a>
+        </div>
+    </form>
+</div>
