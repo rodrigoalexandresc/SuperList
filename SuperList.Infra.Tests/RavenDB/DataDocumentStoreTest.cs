@@ -1,18 +1,17 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using NUnit.Framework;
 using Raven.Client;
 using SuperList.Infra.Repository.RavenDB;
 
 namespace SuperList.Infra.Tests.RavenDB
 {
-    [TestClass]
+    [TestFixture]
     public class DataDocumentStoreTest
     {
-        [TestMethod]
+        [Test]
         public void DocumentStoreInitialize()
         {
             DataDocumentStore.Initialize();
-
-            Assert.IsInstanceOfType(DataDocumentStore.Instance, typeof(IDocumentStore));
+            Assert.IsNotNull(DataDocumentStore.Instance);
         }
     }
 }

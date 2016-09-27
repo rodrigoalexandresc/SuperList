@@ -1,0 +1,14 @@
+﻿<div ng-app="superlist" ng-controller="listaDeCompraCriarCtrl">
+    <ul ng-repeat="secao in ListaPadrao.Secoes">
+        <li>
+            <a class="btn" href="#/listaDeCompra/{{ListaPadrao.Id}}/secao/{{secao.Id}}"><i class="material-icons">filter_drama</i>{{secao.Descricao}}</a>
+            <div class="collapsible-body">
+                <ul ng-repeat="item in secao.Itens">
+                    <li>{{item.Descricao}}</li>
+                    <li><input type="number">{{item.Quantidade}}</li>
+                    <li><a class="btn"><i class="material-icons">delete</i></a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

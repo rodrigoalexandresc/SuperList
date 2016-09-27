@@ -39,6 +39,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Raven.Abstractions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
       <HintPath>..\packages\RavenDB.Database.3.0.30153\lib\net45\Raven.Abstractions.dll</HintPath>
       <Private>True</Private>
@@ -69,8 +73,15 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RavenDB\DataDocumentStoreTest.cs" />
+    <Compile Include="RavenDB\ListaDeCompraRepositoryTest.cs" />
+    <Compile Include="RavenDB\RepositoryTest.cs" />
+    <Compile Include="RavenDB\UnitOfWorkRavenDBTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SuperList.Domain\SuperList.Domain.csproj">
+      <Project>{88DD1377-C0B4-4031-BD2C-8C74527DFDB5}</Project>
+      <Name>SuperList.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SuperList.Infra\SuperList.Infra.csproj">
       <Project>{494d3adc-f090-4b88-b991-fc6ea3c79869}</Project>
       <Name>SuperList.Infra</Name>

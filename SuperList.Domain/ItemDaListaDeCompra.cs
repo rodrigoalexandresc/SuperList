@@ -37,33 +37,9 @@ namespace SuperList.Domain
             }
         }
 
-        public void AdicionarQtdeComprada(decimal qtde)
-        {
-            Quantidade -= qtde;
-            if (Quantidade == 0)
-                Comprado = true;
-        }
-
-        public void RemoverQtdeComprada(decimal qtde)
+        public void AdicionarQuantidade(decimal qtde)
         {
             Quantidade += qtde;
-            Comprado = false;
-        }
-
-        public void MarcarItemComoComprado()
-        {
-            Quantidade = 0m;
-            Comprado = true;
-        }
-
-        public void DesmarcarItem()
-        {
-            Comprado = false;
-        }
-
-        public void SetarPreco(decimal preco = 0m)
-        {
-            Preco = preco;
         }
 
     }

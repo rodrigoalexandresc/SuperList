@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SuperList.Infra.Repository.RavenDB
 {
-    public class ListaDeCompraRepository : RavenDBRepository, IListaDeCompraRepository
+    public class ListaDeCompraRepository : RavenDBRepository<ListaDeCompra>, IListaDeCompraRepository
     {
         IAsyncDocumentSession session;
 
@@ -25,7 +25,7 @@ namespace SuperList.Infra.Repository.RavenDB
                 .Where(o => o.UsuarioId == usuarioId)
                 .Select(o => new ListaDeCompraDoUsuarioDTO
                 {
-                    Id = o.ListaDeCompraId,
+                    Id = o.Id,
                     DataCriacao = o.DataCriacao
                 }).ToListAsync();
                 

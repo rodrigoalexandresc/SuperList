@@ -1,8 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
 namespace SuperList.Domain.Infra
 {
-    public interface IUnitOfWorkRavenDB 
+    public interface IUnitOfWorkRavenDB : IDisposable
     {
         Task Commit();
     }

@@ -12,20 +12,30 @@
                 controller: 'homeCtrl'
             })
 
-            .when('/login', {
-                templateUrl: buildUrl('login'),
-                controller: 'loginCtrl'
+            //.when('/login', {
+            //    templateUrl: buildUrl('login'),
+            //    controller: 'loginCtrl'
+            //})
+
+            //.when('/registrar', {
+            //    templateUrl: buildUrl('registrar'),
+            //    controller: 'registrarCtrl'
+            //})
+
+            .when('/listaDeCompra/criar', {
+                templateUrl: buildUrl('listaDeCompraCriar'),
+                controller: 'listaDeCompraCriarCtrl'
             })
 
-            .when('/registrar', {
-                templateUrl: buildUrl('registrar'),
-                controller: 'registrarCtrl'
+            .when('/listaDeCompra/:id/secao/:secaoId', {
+                templateUrl: buildUrl('listaDeCompraSecao'),
+                controller: 'listaDeCompraSecaoCtrl'
             })
 
-            .when('/listaDeCompra', {
-                templateUrl: buildUrl('listaDeCompra'),
-                controller: 'listaDeCompraCtrl'
-            })
+            //.when('/listaDeCompra/minhasListas', {
+            //    templateUrl: buildUrl('listaDeCompraListar'),
+            //    controller: 'listaDeCompraListarCtrl'
+            //})
 
             //.when('/servicos/:id', {
             //    templateUrl: buildUrl('servicosDetail'),

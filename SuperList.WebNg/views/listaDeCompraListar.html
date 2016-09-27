@@ -1,7 +1,7 @@
 ﻿<div ng-app="superlist" ng-controller="listaDeCompraCtrl">
     <div>
-        <h5 class="red-text text-darken-2">Minhas listas</h5>
-        <a href="#/criarListaDeCompra" class="waves-effect waves-light btn-floating red"><i class="material-icons left">add</i></a>
+        <h5 class="blue-text text-darken-2">Minhas listas</h5>
+        <a href="#/criarListaDeCompra" class="waves-effect waves-light btn-floating blue"><i class="material-icons left">add</i></a>
     </div>
     <ul class="collection" ng-repeat="lista in listas.data">
         <li class="collection-item">{{lista.DataCriacao}}<a href="#/editarListaDeCompra/{{lista.Id}}" class="secondary-content"><i class="material-icons">send</i></a></li>

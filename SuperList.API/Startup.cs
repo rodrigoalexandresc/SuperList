@@ -14,7 +14,7 @@ namespace SuperList.API
         public void Configuration(IAppBuilder app)
         {
             ConfigureDependencyInjection();
-            ConfigureAuth(app);           
+            ConfigureAuth(app);                                  
         }
 
         private void ConfigureDependencyInjection()

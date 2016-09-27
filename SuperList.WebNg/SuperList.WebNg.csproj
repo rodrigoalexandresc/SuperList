@@ -119,10 +119,10 @@
     <Content Include="lib\angular\angular.js" />
     <Content Include="lib\angular\angular.min.js" />
     <Content Include="lib\infra.js" />
-    <Content Include="views\criarListaDeCompra.html" />
+    <Content Include="views\listaDeCompraCriar.html" />
     <Content Include="views\dispensa.html" />
     <Content Include="views\home.html" />
-    <Content Include="views\listaDeCompra.html" />
+    <Content Include="views\listaDeCompraListar.html" />
     <Content Include="views\login.html" />
     <Content Include="views\registrar.html" />
     <Content Include="Web.config" />

@@ -1,9 +1,11 @@
-﻿namespace SuperList.Domain
+﻿using System;
+
+namespace SuperList.Domain
 {
     public class Secao
     {
-        public string Codigo { get; set; }
+        public Guid Id { get; private set; }
 
-        public string Descricao { get; set; }
+        public string Descricao { get; private set; }
     }
 }

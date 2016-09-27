@@ -61,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\RavenDB\DocumentStore.cs" />
     <Compile Include="Repository\RavenDB\RavenDBRepository.cs" />
+    <Compile Include="Repository\RavenDB\SecaoRepository.cs" />
     <Compile Include="Repository\RavenDB\UnitOfWorkRavenDB.cs" />
     <Compile Include="Repository\RavenDB\ListaDeCompraRepository.cs" />
   </ItemGroup>

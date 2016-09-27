@@ -44,23 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\CadastrarDispensaCommand.cs" />
-    <Compile Include="Dispensa.cs" />
-    <Compile Include="DispensaItem.cs" />
+    <Compile Include="Commands\CriarListaDeCompraCommand.cs" />
     <Compile Include="DTO\ListaDeCompraDoUsuarioDTO.cs" />
+    <Compile Include="Entity.cs" />
     <Compile Include="Infra\IUnitOfWorkRavenDB.cs" />
     <Compile Include="ItemDaListaDeCompra.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\ISecaoRepository.cs" />
     <Compile Include="Repositories\IUnitOfWorkFactory.cs" />
     <Compile Include="ListaDeCompra.cs" />
-    <Compile Include="Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\IDispensaRepository.cs" />
     <Compile Include="Repositories\IListaDeCompraRepository.cs" />
     <Compile Include="Secao.cs" />
-    <Compile Include="Services\IDispensaService.cs" />
     <Compile Include="Services\IListaDeCompraService.cs" />
     <Compile Include="Enums\StatusDaListaDeCompraEnum.cs" />
-    <Compile Include="UnidadeDeMedida.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
